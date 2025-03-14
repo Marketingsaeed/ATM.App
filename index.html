@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Saeed.png">
+
+
+</head>
+<body>
+    <div class="atm-container">
+        <div class="screen">
+            <h1 id="screen-title">Welcome</h1>
+            <div id="screen-content">
+                <!-- Content will be dynamically updated by JavaScript -->
+            </div>
+            <div id="pin-entry" style="display:none;">
+                <p>Enter PIN:</p>
+                <input type="password" id="pin-input" maxlength="4">
+                <button id="submit-pin">Submit</button>
+            </div>
+        </div>
+        <div class="keypad">
+            <!-- Number buttons, Clear, Enter, Cancel -->
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button data-number="0">0</button>
+            <button id="clear-button">Clear</button>
+            <button id="enter-button">Enter</button>
+            <button id="cancel-button">Cancel</button>
+
+        </div>
+        <div class="function-keys">
+            <!-- Buttons on either side of the screen (Withdraw, Deposit, Balance, Exit) -->
+            <button id="function1">Withdraw</button>
+            <button id="function2">Deposit</button>
+            <button id="function3">Balance</button>
+            <button id="function4">Exit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
